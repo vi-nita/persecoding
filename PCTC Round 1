@@ -1,0 +1,89 @@
+#qn 1
+greeting = input()
+name = input()
+print(greeting + " " + name)
+
+#qn 2 
+num1 = int(input())
+num2 = int(input())
+if num1 > num2:
+  print(num1 - num2)
+else:
+  print(num2 - num1)
+  
+ #qn 3
+word = input()
+repeats = (30 // len(word)) + 1
+output = word * repeats
+print(output[:30])
+
+#qn 4
+numberChoice = int(input())
+if numberChoice > 50:
+  print("yes dream big")
+else:
+    print("on the small side")
+
+#qn 5
+num1 = int(input())
+char = input()
+num2 = int(input())
+
+if char == '+':
+  print(num1 + num2)
+else:
+  print(num1 * num2)
+  
+#qn 6
+name1 = input() 
+name2 = input() 
+name3 = input() 
+name4 = input() 
+name5 = input() 
+
+match = "Ellie"
+
+if name1 == "Ellie":
+  print("1st")
+elif name2 == "Ellie":
+  print("2nd")
+elif name3 == "Ellie":
+  print("3rd")
+elif name4 == "Ellie":
+  print("4th")
+else:
+  print("5th")
+  
+#qn 7
+letter1 = input()
+letter2 = input()
+
+if letter1 < letter2:
+  print(letter1 + letter2)
+else:
+  print(letter2 + letter1)
+  
+#qn 8
+height = int(input())
+
+print(r"\./")
+
+for stem in range(height):
+  print(".|.")
+  
+#qn 9
+char1 = input()
+
+if char1 == "<":
+  print("<+&><+&>")
+elif char1 == "+":
+  print("+&><+&><")
+elif char1 == "&":
+  print("&><+&><+")
+else:
+  print("><+&><+&")
+  
+#qn 10
+ingredients = "".join(sorted(input()))
+missing = {"CCIIMW":"C", "CCCIMW":"I", "CCCIIW":"M", "CCCIIM":"W"}
+print(missing[ingredients])
